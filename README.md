@@ -2,16 +2,16 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Entregables](#6-entregables)
-* [7. Hacker edition](#7-hacker-edition)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
-* [10. Achicando el problema](#10-achicando-el-problema)
+* [1. Preámbulo](#1*preámbulo)
+* [2. Resumen del proyecto](#2*resumen*del*proyecto)
+* [3. Objetivos de aprendizaje](#3*objetivos*de*aprendizaje)
+* [4. Consideraciones generales](#4*consideraciones*generales)
+* [5. Criterios de aceptación mínimos del proyecto](#5*criterios*de*aceptación*mínimos*del*proyecto)
+* [6. Entregables](#6*entregables)
+* [7. Hacker edition](#7*hacker*edition)
+* [8. Pistas, tips y lecturas complementarias](#8*pistas*tips*y*lecturas*complementarias)
+* [9. Checklist](#9*checklist)
+* [10. Achicando el problema](#10*achicando*el*problema)
 
 ***
 
@@ -32,12 +32,12 @@ herramienta usando [Node.js](https://nodejs.org/), que lea y analice archivos
 en formato `Markdown`, para verificar los links que contengan y reportar
 algunas estadísticas.
 
-![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+![md*links](https://user*images.githubusercontent.com/110297/42118443*b7a5f1f0*7bc8*11e8*96ad*9cc5593715a6.jpg)
 
 ## 2. Resumen del proyecto
 
 En este proyecto crearás una herramienta de línea de comando (CLI) así como tu
-propia librería (o biblioteca - library) en JavaScript.
+propia librería (o biblioteca * library) en JavaScript.
 
 En esta oportunidad nos alejamos un poco del navegador para construir un
 programa que se ejecute usando Node.js. Aprenderemos sobre procesos
@@ -61,184 +61,202 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### JavaScript
 
-- [ ] **Diferenciar entre tipos de datos primitivos y no primitivos**
+* [ ] **Diferenciar entre tipos de datos primitivos y no primitivos**
 
-- [ ] **Arrays (arreglos)**
-
-  <details><summary>Links</summary><p>
-
-  * [Arreglos](https://curriculum.laboratoria.la/es/topics/javascript/04-arrays)
-  * [Array - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/)
-  * [Array.prototype.sort() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-  * [Array.prototype.forEach() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-  * [Array.prototype.map() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-  * [Array.prototype.filter() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-  * [Array.prototype.reduce() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-</p></details>
-
-- [ ] **Objetos (key, value)**
+* [ ] **Arrays (arreglos)**
 
   <details><summary>Links</summary><p>
 
-  * [Objetos en JavaScript](https://curriculum.laboratoria.la/es/topics/javascript/05-objects/01-objects)
+  * [Arreglos](https://curriculum.laboratoria.la/es/topics/javascript/04*arrays)
+  * [Array * MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/)
+  * [Array.prototype.sort() * MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+  * [Array.prototype.forEach() * MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+  * [Array.prototype.map() * MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+  * [Array.prototype.filter() * MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+  * [Array.prototype.reduce() * MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+
 </p></details>
 
-- [ ] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
+* [ ] **Objetos (key, value)**
 
   <details><summary>Links</summary><p>
 
-  * [Estructuras condicionales y repetitivas](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/01-conditionals-and-loops)
-  * [Tomando decisiones en tu código — condicionales - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
+* [Objetos en JavaScript](https://curriculum.laboratoria.la/es/topics/javascript/05*objects/01*objects)
+
 </p></details>
 
-- [ ] **Funciones (params, args, return)**
+* [ ] **Uso de condicionales (if*else, switch, operador ternario, lógica booleana)**
 
   <details><summary>Links</summary><p>
 
-  * [Funciones (control de flujo)](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/03-functions)
-  * [Funciones clásicas](https://curriculum.laboratoria.la/es/topics/javascript/03-functions/01-classic)
-  * [Arrow Functions](https://curriculum.laboratoria.la/es/topics/javascript/03-functions/02-arrow)
-  * [Funciones — bloques de código reutilizables - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Functions)
+  * [Estructuras condicionales y repetitivas](https://curriculum.laboratoria.la/es/topics/javascript/02*flow*control/01*conditionals*and*loops)
+  * [Tomando decisiones en tu código — condicionales * MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
+
 </p></details>
 
-- [ ] **Recursión o recursividad**
+* [ ] **Funciones (params, args, return)**
 
   <details><summary>Links</summary><p>
 
-  * [Píldora recursión - YouTube Laboratoria Developers](https://www.youtube.com/watch?v=lPPgY3HLlhQ)
-  * [Recursión o Recursividad - Laboratoria Developers en Medium](https://medium.com/laboratoria-developers/recursi%C3%B3n-o-recursividad-ec8f1a359727)
+  * [Funciones (control de flujo)](https://curriculum.laboratoria.la/es/topics/javascript/02*flow*control/03*functions)
+  * [Funciones clásicas](https://curriculum.laboratoria.la/es/topics/javascript/03*functions/01*classic)
+  * [Arrow Functions](https://curriculum.laboratoria.la/es/topics/javascript/03*functions/02*arrow)
+  * [Funciones — bloques de código reutilizables * MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Functions)
+
 </p></details>
 
-- [ ] **Módulos de CommonJS**
+* [ ] **Recursión o recursividad**
 
   <details><summary>Links</summary><p>
 
-  * [Modules: CommonJS modules - Node.js Docs](https://nodejs.org/docs/latest/api/modules.html)
+  * [Píldora recursión * YouTube Laboratoria Developers](https://www.youtube.com/watch?v=lPPgY3HLlhQ)
+  * [Recursión o Recursividad * Laboratoria Developers en Medium](https://medium.com/laboratoria*developers/recursi%C3%B3n*o*recursividad*ec8f1a359727)
+
 </p></details>
 
-- [ ] **Diferenciar entre expresiones (expressions) y sentencias (statements)**
-
-- [ ] **Callbacks**
+* [ ] **Módulos de CommonJS**
 
   <details><summary>Links</summary><p>
 
-  * [Función Callback - MDN](https://developer.mozilla.org/es/docs/Glossary/Callback_function)
+  * [Modules: CommonJS modules * Node.js Docs](https://nodejs.org/docs/latest/api/modules.html)
+
 </p></details>
 
-- [ ] **Promesas**
+* [ ] **Diferenciar entre expresiones (expressions) y sentencias (statements)**
+
+* [ ] **Callbacks**
 
   <details><summary>Links</summary><p>
 
-  * [Promise - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-  * [How to Write a JavaScript Promise - freecodecamp (en inglés)](https://www.freecodecamp.org/news/how-to-write-a-javascript-promise-4ed8d44292b8/)
+  * [Función Callback * MDN](https://developer.mozilla.org/es/docs/Glossary/Callback_function)
+
 </p></details>
 
-- [ ] **Pruebas unitarias (unit tests)**
+* [ ] **Promesas**
 
   <details><summary>Links</summary><p>
 
-  * [Empezando con Jest - Documentación oficial](https://jestjs.io/docs/es-ES/getting-started)
+  * [Promise * MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  * [How to Write a JavaScript Promise * freecodecamp (en inglés)](https://www.freecodecamp.org/news/how*to*write*a*javascript*promise*4ed8d44292b8/)
+
 </p></details>
 
-- [ ] **Pruebas asíncronas**
+* [ ] **Pruebas unitarias (unit tests)**
 
   <details><summary>Links</summary><p>
 
-  * [Tests de código asincrónico con Jest - Documentación oficial](https://jestjs.io/docs/es-ES/asynchronous)
+  * [Empezando con Jest * Documentación oficial](https://jestjs.io/docs/es*ES/getting*started)
+
 </p></details>
 
-- [ ] **Uso de mocks y espías**
+* [ ] **Pruebas asíncronas**
 
   <details><summary>Links</summary><p>
 
-  * [Manual Mocks con Jest - Documentación oficial](https://jestjs.io/docs/es-ES/manual-mocks)
+  * [Tests de código asincrónico con Jest * Documentación oficial](https://jestjs.io/docs/es*ES/asynchronous)
+
 </p></details>
 
-- [ ] **Pruebas de compatibilidad en múltiples entornos de ejecución**
+* [ ] **Uso de mocks y espías**
 
-- [ ] **Uso de linter (ESLINT)**
+  <details><summary>Links</summary><p>
 
-- [ ] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
+  * [Manual Mocks con Jest * Documentación oficial](https://jestjs.io/docs/es*ES/manual*mocks)
+
+</p></details>
+
+* [ ] **Pruebas de compatibilidad en múltiples entornos de ejecución**
+
+* [ ] **Uso de linter (ESLINT)**
+
+* [ ] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
 ### Node.js
 
-- [ ] **Instalar y usar módulos con npm**
+* [ ] **Instalar y usar módulos con npm**
 
   <details><summary>Links</summary><p>
 
   * [Sitio oficial de npm (en inglés)](https://www.npmjs.com/)
+
 </p></details>
 
-- [ ] **Configuración de package.json**
+* [ ] **Configuración de package.json**
 
   <details><summary>Links</summary><p>
 
-  * [package.json - Documentación oficial (en inglés)](https://docs.npmjs.com/files/package.json)
+  * [package.json * Documentación oficial (en inglés)](https://docs.npmjs.com/files/package.json)
+
 </p></details>
 
-- [ ] **Configuración de npm-scripts**
+* [ ] **Configuración de npm*scripts**
 
   <details><summary>Links</summary><p>
 
-  * [scripts - Documentación oficial (en inglés)](https://docs.npmjs.com/misc/scripts)
+  * [scripts * Documentación oficial (en inglés)](https://docs.npmjs.com/misc/scripts)
+
 </p></details>
 
-- [ ] **process (env, argv, stdin-stdout-stderr, exit-code)**
+* [ ] **process (env, argv, stdin_stdout_stderr, exit*code)**
 
   <details><summary>Links</summary><p>
 
-  * [Process - Documentación oficial (en inglés)](https://nodejs.org/api/process.html)
+  * [Process * Documentación oficial (en inglés)](https://nodejs.org/api/process.html)
+
 </p></details>
 
-- [ ] **File system (fs, path)**
+* [ ] **File system (fs, path)**
 
   <details><summary>Links</summary><p>
 
-  * [File system - Documentación oficial (en inglés)](https://nodejs.org/api/fs.html)
-  * [Path - Documentación oficial (en inglés)](https://nodejs.org/api/path.html)
+  * [File system * Documentación oficial (en inglés)](https://nodejs.org/api/fs.html)
+  * [Path * Documentación oficial (en inglés)](https://nodejs.org/api/path.html)
+
 </p></details>
 
 ### Control de Versiones (Git y GitHub)
 
-- [ ] **Git: Instalación y configuración**
+* [ ] **Git: Instalación y configuración**
 
-- [ ] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
+* [ ] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
 
-- [ ] **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
+* [ ] **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
 
-- [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
+* [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
-- [ ] **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
+* [ ] **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
 
-- [ ] **GitHub: Organización en Github (projects | issues | labels | milestones | releases)**
+* [ ] **GitHub: Organización en Github (projects | issues | labels | milestones | releases)**
 
 ### HTTP
 
-- [ ] **Consulta o petición (request) y respuesta (response).**
+* [ ] **Consulta o petición (request) y respuesta (response).**
 
   <details><summary>Links</summary><p>
 
-  * [Generalidades del protocolo HTTP - MDN](https://developer.mozilla.org/es/docs/Web/HTTP/Overview)
-  * [Mensajes HTTP - MDN](https://developer.mozilla.org/es/docs/Web/HTTP/Messages)
+  * [Generalidades del protocolo HTTP * MDN](https://developer.mozilla.org/es/docs/Web/HTTP/Overview)
+  * [Mensajes HTTP * MDN](https://developer.mozilla.org/es/docs/Web/HTTP/Messages)
+
 </p></details>
 
-- [ ] **Codigos de status de HTTP**
+* [ ] **Codigos de status de HTTP**
 
   <details><summary>Links</summary><p>
 
-  * [Códigos de estado de respuesta HTTP - MDN](https://developer.mozilla.org/es/docs/Web/HTTP/Status)
-  * [The Complete Guide to Status Codes for Meaningful ReST APIs - dev.to](https://dev.to/khaosdoctor/the-complete-guide-to-status-codes-for-meaningful-rest-apis-1-5c5)
+  * [Códigos de estado de respuesta HTTP * MDN](https://developer.mozilla.org/es/docs/Web/HTTP/Status)
+  * [The Complete Guide to Status Codes for Meaningful ReST APIs * dev.to](https://dev.to/khaosdoctor/the*complete*guide*to*status*codes*for*meaningful*rest*apis*1*5c5)
+
 </p></details>
 
 ## 4. Consideraciones generales
 
 * Este proyecto se debe "resolver" de manera individual.
 
-* La **librería** y el **script ejecutable** (herramienta de línea de comando -
+* La **librería** y el **script ejecutable** (herramienta de línea de comando *
   CLI) deben estar implementados en JavaScript para ser ejecutados con
   Node.js. **Está permitido usar librerías externas**.
 
-* Tu módulo **debe ser instalable** via `npm install <github-user>/md-links`. Este
+* Tu módulo **debe ser instalable** via `npm install <github*user>/md*links`. Este
   módulo debe incluir tanto un _ejecutable_ que podamos invocar en la línea de
   comando como una interfaz que podamos importar con `require` para usarlo
   programáticamente.
@@ -288,7 +306,7 @@ considere necesarios.
   como Airbnb deberás modificar este archivo.
 * `.gitignore` para ignorar `node_modules` u otras carpetas que no deban
   incluirse en control de versiones (`git`).
-* `test/md-links.spec.js` debe contener los tests unitarios para la función
+* `test/md*links.spec.js` debe contener los tests unitarios para la función
   `mdLinks()`. Tu inplementación debe pasar estos tets.
 
 ## Este proyecto consta de DOS partes
@@ -304,11 +322,11 @@ siguiente interfaz:
 
 * `path`: Ruta **absoluta** o **relativa** al **archivo** o **directorio**.
 Si la ruta pasada es relativa, debe resolverse como relativa al directorio
-desde donde se invoca node - _current working directory_).
+desde donde se invoca node * _current working directory_).
 * `options`: Un objeto con **únicamente** las siguientes propiedades:
-  - `validate`: Booleano que determina si se desea validar los links
+  * `validate`: Booleano que determina si se desea validar los links
     encontrados.
-  - `stats`: Booleano que determina si se desea obtener un output
+  * `stats`: Booleano que determina si se desea obtener un output
     con información estadística general.
 
 ##### Valor de retorno
@@ -334,7 +352,7 @@ Con `validate:true` :
 #### Ejemplo (resultados como comentarios)
 
 ```js
-const mdLinks = require("md-links");
+const mdLinks = require("md*links");
 
 mdLinks("./some/example.md")
   .then(links => {
@@ -355,19 +373,19 @@ mdLinks("./some/dir")
   .catch(console.error);
 ```
 
-### 2) CLI (Command Line Interface - Interfaz de Línea de Comando)
+### 2) CLI (Command Line Interface * Interfaz de Línea de Comando)
 
 El ejecutable de nuestra aplicación debe poder ejecutarse de la siguiente
 manera a través de la **terminal**:
 
-`md-links <path-to-file> [options]`
+`md*links <path*to*file> [options]`
 
 Por ejemplo:
 
 ```sh
-$ md-links ./some/example.md
+$ md*links ./some/example.md
 ./some/example.md http://algo.com/2/3/ Link a algo
-./some/example.md https://otra-cosa.net/algun-doc.html algún doc
+./some/example.md https://otra*cosa.net/algun*doc.html algún doc
 ./some/example.md http://google.com/ Google
 ```
 
@@ -379,18 +397,18 @@ que hay dentro del link (truncado a 50 caracteres).
 
 #### Options
 
-##### `--validate`
+##### `*validate`
 
-Si pasamos la opción `--validate`, el módulo debe hacer una petición HTTP para
+Si pasamos la opción `*validate`, el módulo debe hacer una petición HTTP para
 averiguar si el link funciona o no. Si el link resulta en una redirección a una
 URL que responde ok, entonces consideraremos el link como ok.
 
 Por ejemplo:
 
 ```sh
-$ md-links ./some/example.md --validate
+$ md*links ./some/example.md *validate
 ./some/example.md http://algo.com/2/3/ ok 200 Link a algo
-./some/example.md https://otra-cosa.net/algun-doc.html fail 404 algún doc
+./some/example.md https://otra*cosa.net/algun*doc.html fail 404 algún doc
 ./some/example.md http://google.com/ ok 301 Google
 ```
 
@@ -398,22 +416,22 @@ Vemos que el _output_ en este caso incluye la palabra `ok` o `fail` después de
 la URL, así como el status de la respuesta recibida a la petición HTTP a dicha
 URL.
 
-##### `--stats`
+##### `*stats`
 
-Si pasamos la opción `--stats` el output (salida) será un texto con estadísticas
+Si pasamos la opción `*stats` el output (salida) será un texto con estadísticas
 básicas sobre los links.
 
 ```sh
-$ md-links ./some/example.md --stats
+$ md*links ./some/example.md *stats
 Total: 3
 Unique: 3
 ```
 
-También podemos combinar `--stats` y `--validate` para obtener estadísticas que
+También podemos combinar `*stats` y `*validate` para obtener estadísticas que
 necesiten de los resultados de la validación.
 
 ```sh
-$ md-links ./some/example.md --stats --validate
+$ md*links ./some/example.md *stats *validate
 Total: 3
 Unique: 3
 Broken: 1
@@ -421,7 +439,7 @@ Broken: 1
 
 ## 6. Entregables
 
-Módulo instalable via `npm install <github-user>/md-links`. Este módulo debe
+Módulo instalable via `npm install <github*user>/md*links`. Este módulo debe
 incluir tanto **un ejecutable** como **una interfaz** que podamos importar con `require`
 para usarlo programáticamente.
 
@@ -452,10 +470,10 @@ Para que el módulo sea instalable desde GitHub solo tiene que:
 Con el comando `npm install githubname/reponame` podemos instalar directamente
 desde GitHub. Ver [docs oficiales de `npm install` acá](https://docs.npmjs.com/cli/install).
 
-Por ejemplo, el [`course-parser`](https://github.com/Laboratoria/course-parser)
+Por ejemplo, el [`course*parser`](https://github.com/Laboratoria/course*parser)
 que usamos para la currícula no está publicado en el registro público de NPM,
 así que lo instalamos directamente desde GitHub con el comando `npm install
-Laboratoria/course-parser`.
+Laboratoria/course*parser`.
 
 ### Sugerencias de implementación
 
@@ -467,7 +485,7 @@ tanto usando librerías como implementando en VanillaJS.
 Por poner un ejemplo, el _parseado_ (análisis) del markdown para extraer los
 links podría plantearse de las siguientes maneras (todas válidas):
 
-* Usando un _módulo_ como [markdown-it](https://github.com/markdown-it/markdown-it),
+* Usando un _módulo_ como [markdown*it](https://github.com/markdown*it/markdown*it),
   que nos devuelve un arreglo de _tokens_ que podemos recorrer para identificar
   los links.
 * Siguiendo otro camino completamente, podríamos usar
@@ -486,37 +504,37 @@ si tienes dudas existenciales con respecto a estas decisiones. No existe una
 ### Tutoriales / NodeSchool workshoppers
 
 * [learnyounode](https://github.com/workshopper/learnyounode)
-* [how-to-npm](https://github.com/workshopper/how-to-npm)
-* [promise-it-wont-hurt](https://github.com/stevekane/promise-it-wont-hurt)
+* [how_to_npm](https://github.com/workshopper/how*to*npm)
+* [promise_it_wont*hurt](https://github.com/stevekane/promise*it*wont*hurt)
 
 ### Otros recursos
 
-* [Acerca de Node.js - Documentación oficial](https://nodejs.org/es/about/)
-* [Node.js file system - Documentación oficial](https://nodejs.org/api/fs.html)
-* [Node.js http.get - Documentación oficial](https://nodejs.org/api/http.html#http_http_get_options_callback)
-* [Node.js - Wikipedia](https://es.wikipedia.org/wiki/Node.js)
-* [What exactly is Node.js? - freeCodeCamp](https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5)
-* [¿Qué es Node.js y para qué sirve? - drauta.com](https://www.drauta.com/que-es-nodejs-y-para-que-sirve)
-* [¿Qué es Nodejs? Javascript en el Servidor - Fazt en YouTube](https://www.youtube.com/watch?v=WgSc1nv_4Gw)
-* [¿Simplemente qué es Node.js? - IBM Developer Works, 2011](https://www.ibm.com/developerworks/ssa/opensource/library/os-nodejs/index.html)
-* [Node.js y npm](https://www.genbeta.com/desarrollo/node-js-y-npm)
-* [Módulos, librerías, paquetes, frameworks... ¿cuál es la diferencia?](http://community.laboratoria.la/t/modulos-librerias-paquetes-frameworks-cual-es-la-diferencia/175)
-* [Asíncronía en js](https://carlosazaustre.es/manejando-la-asincronia-en-javascript)
-* [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
-* [Publicar packpage](https://docs.npmjs.com/getting-started/publishing-npm-packages)
-* [Crear módulos en Node.js](https://docs.npmjs.com/getting-started/publishing-npm-packages)
+* [Acerca de Node.js * Documentación oficial](https://nodejs.org/es/about/)
+* [Node.js file system * Documentación oficial](https://nodejs.org/api/fs.html)
+* [Node.js http.get * Documentación oficial](https://nodejs.org/api/http.html#http_http_get_options_callback)
+* [Node.js * Wikipedia](https://es.wikipedia.org/wiki/Node.js)
+* [What exactly is Node.js? * freeCodeCamp](https://medium.freecodecamp.org/what*exactly*is*node*js*ae36e97449f5)
+* [¿Qué es Node.js y para qué sirve? * drauta.com](https://www.drauta.com/que*es*nodejs*y*para*que*sirve)
+* [¿Qué es Nodejs? Javascript en el Servidor * Fazt en YouTube](https://www.youtube.com/watch?v=WgSc1nv_4Gw)
+* [¿Simplemente qué es Node.js? * IBM Developer Works, 2011](https://www.ibm.com/developerworks/ssa/opensource/library/os*nodejs/index.html)
+* [Node.js y npm](https://www.genbeta.com/desarrollo/node*js*y*npm)
+* [Módulos, librerías, paquetes, frameworks... ¿cuál es la diferencia?](http://community.laboratoria.la/t/modulos*librerias*paquetes*frameworks*cual*es*la*diferencia/175)
+* [Asíncronía en js](https://carlosazaustre.es/manejando*la*asincronia*en*javascript)
+* [NPM](https://docs.npmjs.com/getting*started/what*is*npm)
+* [Publicar packpage](https://docs.npmjs.com/getting*started/publishing*npm*packages)
+* [Crear módulos en Node.js](https://docs.npmjs.com/getting*started/publishing*npm*packages)
 * [Leer un archivo](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback)
 * [Leer un directorio](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback)
 * [Path](https://nodejs.org/api/path.html)
-* [Linea de comando CLI](https://medium.com/netscape/a-guide-to-create-a-nodejs-command-line-package-c2166ad0452e)
+* [Linea de comando CLI](https://medium.com/netscape/a*guide*to*create*a*nodejs*command*line*package*c2166ad0452e)
 
-### Únete al canal de Slack **#project-md-links**
+### Únete al canal de Slack **#project_md_links**
 
 ## 9. Checklist
 
 ### General
 
-* [ ] Puede instalarse via `npm install --global <github-user>/md-links`
+* [ ] Puede instalarse via `npm install *global <github*user>/md*links`
 
 ### `README.md`
 
@@ -533,10 +551,10 @@ si tienes dudas existenciales con respecto a estas decisiones. No existe una
 
 ### CLI
 
-* [ ] Expone ejecutable `md-links` en el path (configurado en `package.json`)
+* [ ] Expone ejecutable `md*links` en el path (configurado en `package.json`)
 * [ ] Se ejecuta sin errores / output esperado
-* [ ] Implementa `--validate`
-* [ ] Implementa `--stats`
+* [ ] Implementa `*validate`
+* [ ] Implementa `*stats`
 
 ### Pruebas / tests
 
@@ -547,7 +565,7 @@ si tienes dudas existenciales con respecto a estas decisiones. No existe una
 ## 10. Achicando el problema
 
 Un "superpoder" que esperamos puedas desarrollar durante el bootcamp
-es el de definir "mini-proyectos" que te acerquen paso a paso a
+es el de definir "mini*proyectos" que te acerquen paso a paso a
 la solución del "gran proyecto". Es el equivalente a comenzar armando
 esquinas o bordes del rompecabezas/puzzle sin saber necesariamente
 cómo encajarán al final. Déjate llevar y explora.
@@ -577,7 +595,7 @@ Mediante **issues** y **milestones** podrás organizar y planificar
 tareas y objetivos concretos.
 
 Tomando en consideración los **entregables** del proyecto, el
-[9. Checklist](#9-checklist) y los **pasos** que definiste en tu
+[9. Checklist](#9*checklist) y los **pasos** que definiste en tu
 `diagrama de flujo`, crea tu planificación en GitHub Projects.
 
 ### Antes de codear
