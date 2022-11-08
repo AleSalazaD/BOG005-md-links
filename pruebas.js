@@ -1,6 +1,7 @@
 // const { Console } = require('console');
-const fs = require('fs');
-const path = require('node:path');
+// const { access, constants } = require('node: fs');
+const path = require("node:path");
+const fs = require("fs");
 
 //TO DO:
 // cómo organizar el boilerplate
@@ -12,30 +13,33 @@ const path = require('node:path');
 // Crear objeto de links ===>
 // cómo unir dos rutas y para qué ===> método join()
 
-// const route = './fileTest'; // relative route
-const route = 'D:/Programacion/LABORATORIA/BOG005-md-links/fileTest'; // absolute route
-//const route = './fileTest/data.md'
+// let route = "./fileTest"; // relative route
+//  let route = "D:/Programacion/LABORATORIA/BOG005-md-links/fileTest"; // absolute route
+let route = './fileTest/me.md'
+// *****************************************************************************************
 
-const filesInDirectory = fs.readdirSync(route);
-console.log(filesInDirectory);
+fs.readFile(route, "utf-8", (error, data) => {
+  if (!error) {
+    console.log(data);
+  } else {
+    console.log(`Algo no funciona: ${error}`);
+  }
+});
 
-// recorrer el array
-// identificar cuales elementos son .md
-// si es .md, debe guardarlos en una variable como array
-// identificar cuales elementos son directorios
-// Si es directorio debe entrar al directorio para repetir desde el paso 1
 
-/* const data = fs.readdirSync(route);
-let markupArray = [];
-let directoryArray = [];
-for(i = 0; i < data.length; i++){
-    const arrayElements = data[i];
-    if (arrayElements.endsWith('.md')) {
-        markupArray.push(arrayElements);
-        console.log(markupArray);
-        console.log(data); */
-    // }else if (fs.statSync(arrayElements).isDirectory() === true) {
-    //     // directoryArray.push(arrayElements);
-    //     console.log('estuvo');
-    // }
-//}
+
+
+// ********************** FUNCIÓN ASÍNCRONA CON ACCESS PARA SABER SI UNA RUTA EXISTE... NO SUPE HACERLA FUNCIONAR******************
+// const pathExists = (route) => {fs.access(route, fs.constants.F_OK, (err) => {
+//   // console.log(`${route} ${err ? 'does not exist' : 'exists'}`);
+//   console.log(`${route} ${err ? true : false}`);
+//   console.log(err);
+
+// })};
+// pathExists(routeArgument)
+
+// if (pathExists(routeArgument) === true) {
+//   console.log('El path no existe, sale de la API');
+// } else if ( pathExists(routeArgument) === false)
+//   {console.log('Se corre la función que valida la absolutez del path')};
+// **********************************************************************************************************************************
