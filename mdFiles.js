@@ -2,14 +2,14 @@ const path = require('path');
 const fs = require('fs');
 const terminal = process.argv;
 
-// Si la ruta es un archivo...
-fs.readFile(route, "utf-8", (error, data) => {
-  if (!error) {
-    console.log(data);
-  } else {
-    console.log(`Algo no funciona: ${error}`);
-  }
-});
+// Si la ruta es un archivo... tal vez tengo que separar los métodos para testear.
+// fs.readFile(route, "utf-8", (error, data) => {
+//   if (!error) {
+//     console.log(data);
+//   } else {
+//     console.log(`Algo no funciona: ${error}`);
+//   }
+// });
 
 // **********Función recursiva que recorre las carpetas extrayendo los archivos .md**********
 let arrayMarkFile = []; 
@@ -35,4 +35,3 @@ const readDirectory = (absolutePath) => {
   console.log(arrayMarkFile);
 
   module.exports = { readDirectory, };
-

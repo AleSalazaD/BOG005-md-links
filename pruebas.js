@@ -1,24 +1,37 @@
 const path = require('path');
 const fs = require('fs');
-const terminal = process.argv
+const terminal = process.argv;
 
-const pathAbsoluteExists = (route) => {
-  let absolutePath = [];
-  if (fs.existsSync(route) == false) {
-      console.log('Por favor verifica la ruta proporcionada.');
+// Lee el contenido del archivo
+fs.readFile(route, "utf-8", (error, data) => {
+  if (!error) {
+    console.log(data);
   } else {
-      console.log('La ruta es correcta. Verifiquemos si es absoluta');
-        if (path.isAbsolute(route) === false) {
-        absolutePath = path.resolve(route);
-        console.log('La volví absoluta porque no lo era: ', absolutePath);
-        } else {
-        absolutePath = route;
-        console.log('Era absoluta y se queda así: ', absolutePath);
-        }
-      return absolutePath;
-     
-    } 
-};
-pathAbsoluteExists(terminal[2]);
+    console.log(`Algo no funciona: ${error}`);
+  }
+});
 
-module.exports = { pathAbsoluteExists, };
+// **********Función recursiva que recorre las carpetas extrayendo los archivos .md**********
+let arrayMarkFile = []; 
+
+const readDirectory = (absolutePath) => {
+	if (path.extname('absolutePath') === "") { // base case. True, es un directorio.
+	  let directory = fs.readdirSync(absolutePath);  // lee dentro del directorio
+	  directory.forEach((filesList) => { // Recorre cada directorio y archivo dentro de directory
+		filesList = path.join(absolutePath, filesList);
+		if (path.extname(filesList) === "") {
+		  readDirectory(filesList);
+		} else if (path.extname(filesList) === ".md") {
+		  arrayMarkFile.push(filesList);
+		}
+	  });
+	} else if (path.extname(absolutePath) == ".md") {
+	  arrayMarkFile.push(absolutePath);
+	}
+  
+	return arrayMarkFile;
+  };
+  readDirectory(terminal[2]);
+  console.log(arrayMarkFile);
+
+  module.exports = { readDirectory, };
