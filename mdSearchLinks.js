@@ -2,8 +2,10 @@
 const fs = require('fs');
 const terminal = process.argv;
 
+// 'D:\\Programacion\\LABORATORIA\\BOG005-md-links\\fileTest\\me.md'
+
 // Permite leer un archivo, convertirlo en caracteres especifico => texto que se puede leer (utf-8)
-// Necesito solamente leer los links externos... revisar la expresion regular
+
 const read = (route) => {
     console.log('Read route: ', route);
     // Valida si es directorio
@@ -15,6 +17,7 @@ const read = (route) => {
       } else {
         fs.readFile(route, 'utf-8', (error, data) => {
           const expression = new RegExp(/[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi);
+          // const expression = new RegExp(/^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/)
           //const expression = /[^!]\[.+?\]\(.+?\)/g;
           if (!error) {
             console.log('Reading links: ', data.match(expression));
