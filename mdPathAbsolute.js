@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const terminal = process.argv
+const terminal = process.argv[2];
 
 // ************ Verifica si la ruta existe y si es absoluta, convirtiéndola en absoluta si no lo es**********
 const pathAbsoluteExists = (route) => {
@@ -20,6 +20,6 @@ const pathAbsoluteExists = (route) => {
      
     } 
 };
-pathAbsoluteExists(terminal[2]);  
+pathAbsoluteExists(terminal);  
 
 module.exports = { pathAbsoluteExists, };
