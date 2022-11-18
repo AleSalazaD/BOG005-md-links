@@ -1,26 +1,42 @@
-const fs = require("fs");
-const terminal = process.argv[2];
+const fs = require('fs');
 
 const read = (route) => {
+  console.log('Read route: ', route);
   return new Promise((resolve, reject) => {
-    fs.readFile(route, "utf-8", (error, data) => {
-      const expression = new RegExp(
-        /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi
-      );
-
+    fs.readFile(route, 'utf-8', (error, data) => {
+      const expression = /(?<!!)\[(.*?)\]\((.*?)\)/g;
+      const hrefExp = /https?:\/{2}.*?(?=\))/g;
+      const textExp = /(?!\[).*(?=\])/g;
+      let arrLink = [];
       if (!error) {
-        resolve(data.match(expression));
+        console.log('Reading links: ', data.match(expression));
+        const dataVar = data.match(expression)
+        dataVar.forEach((link) => {
+          arrLink.push({
+            href: link.match(hrefExp).toString(),
+            text: link.match(textExp).toString(),
+            file: route
+          })
+        });
       } else {
-        console.log(`Error: ${error}`);
+        arrLink.push({
+          href: 'sorry, no links found',
+          text: 'sorry, no links found',
+          file: route
+        })
       }
-    });
-  });
-};
+      resolve(arrLink)
+    }
+    )
+  })
+}
 
 const readAll = (arr) => {
   return arr.map(element => {
     return read(element)
   });
 }
+Promise.all(readAll(['D:\\Programacion\\LABORATORIA\\BOG005-md-links\\fileTest\\me.md']))
+  .then(response => console.log(response))
 
 module.exports = { readAll, };

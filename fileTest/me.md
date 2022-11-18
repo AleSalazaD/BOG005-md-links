@@ -6,6 +6,7 @@
 - ૮⍝• ᴥ •⍝ა I have :cat::cat::cat: and :dog:
 - =͟͟͞♡Love 👩‍💻, :musical_score:, :clapper:, :book:, 🧶
 - ʚɞ How to reach me ... Look for me at www.linkedin.com/in/alesalazard/
-my favorite game is here: https://www.illeva.com/c/swtor-datacron-locations-and-guides/ilum-datacron-master/
-https://www.youtube.com/watch?v=vQ_EBqgUR0c
-https://www.freecodecamp.org/espanol/news/como-entender-recursividad-en-javascript/
+
+
+[Youtube](https://www.youtube.com/watch?v=vQ_EBqgUR0c)
+[game](https://www.illeva.com/c/swtor-datacron-locations-and-guides/ilum-datacron-master/)

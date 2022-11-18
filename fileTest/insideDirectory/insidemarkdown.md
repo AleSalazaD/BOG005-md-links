@@ -1,0 +1,1 @@
+[game](https://www.illeva.com/c/swtor-datacron-locations-and-guides/ilum-datacron-master/)

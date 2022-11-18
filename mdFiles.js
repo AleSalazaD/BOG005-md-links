@@ -9,7 +9,7 @@ const isMdFile = (route) => {
   const stats = fs.statSync(route)
   if (stats.isFile() && path.extname(route) === ".md") {
     arrayMarkFile.push(route)
-    console.log("This is an .md file", route);
+    // console.log("This is an .md file", route);
   } else {
     if (path.extname(route) === "") {
       // base case. True, es un directorio.
@@ -30,6 +30,6 @@ const isMdFile = (route) => {
     return arrayMarkFile;
   }
 };
-console.log(isMdFile(terminal));
+// console.log(isMdFile(terminal));
 
 module.exports = { isMdFile, };

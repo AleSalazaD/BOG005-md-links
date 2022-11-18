@@ -5,7 +5,6 @@ const terminal = process.argv[2];
 
 const mdLinks = (path, options = { validate: false }) => {
 	return new Promise((resolve, reject) => {
-	  //aqui funciones pequenas
 	  const absolutePath = pathAbsoluteExists(path);
 	  const mdFiles = isMdFile(absolutePath);
 	  Promise.all(readAll(mdFiles))
@@ -15,3 +14,4 @@ const mdLinks = (path, options = { validate: false }) => {
   mdLinks(terminal)
 	.then((rest) => console.log('respuesta mdLinks: ', rest))
 	.catch((err) => console.log(err));
+	
