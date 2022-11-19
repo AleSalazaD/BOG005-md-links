@@ -1,6 +1,5 @@
 const path = require('path');
 const fs = require('fs');
-const terminal = process.argv[2];
 
 // **********Función recursiva que recorre las carpetas extrayendo los archivos .md**********
 
@@ -32,4 +31,5 @@ const isMdFile = (route) => {
 };
 // console.log(isMdFile(terminal));
 
-module.exports = { isMdFile, };
+module.exports = { isMdFile, 
+};

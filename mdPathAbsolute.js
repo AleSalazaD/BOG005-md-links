@@ -22,4 +22,5 @@ const pathAbsoluteExists = (route) => {
 };
 pathAbsoluteExists(terminal);  
 
-module.exports = { pathAbsoluteExists, };
+module.exports = { pathAbsoluteExists, 
+};
