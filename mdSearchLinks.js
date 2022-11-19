@@ -36,7 +36,7 @@ const readAll = (arr) => {
     return read(element)
   });
 }
-Promise.all(readAll(['D:\\Programacion\\LABORATORIA\\BOG005-md-links\\fileTest\\me.md']))
-  .then(response => console.log(response))
+// Promise.all(readAll(['D:\\Programacion\\LABORATORIA\\BOG005-md-links\\fileTest\\me.md']))
+//   .then(response => console.log(response))
 
 module.exports = { readAll, };
