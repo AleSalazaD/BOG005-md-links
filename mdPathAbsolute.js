@@ -6,7 +6,7 @@ const terminal = process.argv[2];
 const pathAbsoluteExists = (route) => {
   let absolutePath = '';
   if (fs.existsSync(route) == false) {
-      // console.log('Por favor verifica la ruta proporcionada.');
+      console.log('Por favor verifica la ruta proporcionada.');
   } else {
       // console.log('La ruta es correcta. Verifiquemos si es absoluta');
         if (path.isAbsolute(route) === false) {
