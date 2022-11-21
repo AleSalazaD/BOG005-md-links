@@ -25,8 +25,8 @@ mdLinks(terminal, {validate: true}) // se lleva al CLI
   .catch((err) => err.message)
 
   
-  module.exports = {mdLinks}
+  module.exports = { mdLinks }
 
 
 // Se rompe en el foreach de mdSearchLinks linea 14 cuando hay un archivo md sin links
-// No valida los links.
+// Se rompe si recibe un archivo y no una carpeta
