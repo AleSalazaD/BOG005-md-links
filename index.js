@@ -8,21 +8,16 @@ const mdLinks = (path, options = { validate: false }) => {
   return new Promise((resolve, reject) => {
     const absolutePath = pathAbsoluteExists(path);
     const mdFiles = isMdFile(absolutePath);
-    if (options.validate === false) {
+    if (options.validate === true) {
       Promise.all(linkCatcher(mdFiles))
-			.then((response) => validateHttp(response))
+			.then((response) => validateHttp(response.flat()))
 			.then(respValidate => resolve(respValidate)) // Encadenamiento de promesas
     } else {
       Promise.all(linkCatcher(mdFiles))
-        .then((respValidate) => resolve(respValidate)); 
+        .then((resp) => resolve(resp.flat())); 
     }
   })
 }
-
-mdLinks(terminal)
-  .then((rest) => console.log("respuesta mdLinks: ", rest))
-  .catch((err) => console.log(err));
-
 
   module.exports = {mdLinks,
   }

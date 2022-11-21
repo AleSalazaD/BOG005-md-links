@@ -1,11 +1,12 @@
 const axios = require('axios');
 
 const validateHttp = (objectLinks) => {
+  // console.log('esto es objectLinks', objectLinks);
   const validation = objectLinks.map((link) => {
-    console.log('objeto link', link.flat());
-		return axios.get(link.flat())
+		return axios.get(link.href)
       .then((response) => {
-        (link.status = response.status), (link.result = "Ok!");
+        link.status = response.status 
+        link.result = "Ok!";
         return link;
       })
       .catch((error) => {
@@ -14,8 +15,8 @@ const validateHttp = (objectLinks) => {
           link.ok = "Fail";
           return link;
         } else {
-          link.status = "AQUI> Server error";
-          link.ok = "AQUI>> Fail";
+          link.status = "Server error";
+          link.ok = "Fail";
           return link;
         }
       });
