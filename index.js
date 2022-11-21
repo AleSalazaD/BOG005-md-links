@@ -16,11 +16,16 @@ const mdLinks = (path, options = { validate: false }) => {
       Promise.all(linkCatcher(mdFiles))
         .then((resp) => resolve(resp.flat())); 
     }
+    reject;
   })
 }
 
-  module.exports = {mdLinks,
-  }
+mdLinks(terminal, {validate: true}) // se lleva al CLI
+  .then((rest) => console.log("respuesta mdLinks: ", rest))
+  .catch((err) => err.message)
+
+  
+  module.exports = {mdLinks}
 
 
 // Se rompe en el foreach de mdSearchLinks linea 14 cuando hay un archivo md sin links

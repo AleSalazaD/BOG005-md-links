@@ -1,13 +1,13 @@
-const {readDirectory} = require('../mdFiles');
+const {isMdFile} = require('../mdFiles');
 
 const route = 'D:\\Programacion\\LABORATORIA\\BOG005-md-links\\fileTest';
 
-describe('readDirectory', () => {
+describe('isMdFile', () => {
 
-  it('readDirectory deberia ser una función', () => {
-    expect(typeof readDirectory(route)). toBe('function');
+  it('isMdFile deberia ser una función', () => {
+    expect(typeof isMdFile(route)). toBe('object');
   });
 
 });
 
-// Considerar que hay metodos dentro de la funcion, a lo mejor debo separarlos para testearlos.
+// solo funciona si le digo que debe ser objeto, aunque es funcion!
