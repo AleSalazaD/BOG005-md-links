@@ -13,8 +13,5 @@ describe('mdLinks', () => {
         expect(ans).toEqual(dataSample.validateTrue);
         done()
       })
-    
- 
-  });
-  
+  }); 
 });
