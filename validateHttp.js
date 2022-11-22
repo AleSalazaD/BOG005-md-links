@@ -6,7 +6,7 @@ const validateHttp = (objectLinks) => {
 		return axios.get(link.href)
       .then((response) => {
         link.status = response.status 
-        link.result = "Ok!";
+        link.ok = "Ok!";
         return link;
       })
       .catch((error) => {

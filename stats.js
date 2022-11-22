@@ -7,7 +7,7 @@ const fnStats = (rest) => {
   }
   
   const fnBroken = (rest) => {
-    const broken = rest.filter((links) => links.text === 'fail').length;
+    const broken = rest.filter((link) => link.ok === 'Fail').length;
     const total = {
       'Total': rest.length,
       'Unique': new Set(rest.map((element) => element.href)).size,

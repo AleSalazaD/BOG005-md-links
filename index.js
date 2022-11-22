@@ -2,7 +2,7 @@ const { isMdFile } = require("./mdFiles");
 const { pathAbsoluteExists } = require("./mdPathAbsolute");
 const { linkCatcher } = require("./mdSearchLinks");
 const { validateHttp } = require("./validateHttp");
-const terminal = process.argv[2];
+// const terminal = process.argv[2];
 
 const mdLinks = (path, options = { validate: false }) => {
   return new Promise((resolve, reject) => {
@@ -20,12 +20,7 @@ const mdLinks = (path, options = { validate: false }) => {
   })
 }
 
-// mdLinks(terminal, {validate: true}) // se lleva al CLI
-//   .then((rest) => console.log("respuesta mdLinks: ", rest))
-//   .catch((err) => err.message)
-
-  
-  module.exports = { mdLinks }
+module.exports = { mdLinks }
 
 
 // Se rompe en el foreach de mdSearchLinks linea 14 cuando hay un archivo md sin links
